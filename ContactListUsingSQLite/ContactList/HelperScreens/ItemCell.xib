@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" rowHeight="144" id="KGk-i7-Jjw" customClass="ItemCell" customModule="ContactList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="532" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="532" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmq-kw-7Yy">
+                        <rect key="frame" x="0.0" y="0.0" width="532" height="134"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gkf-tf-QhD">
+                                <rect key="frame" x="20" y="15" width="107" height="104.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gkf-tf-QhD" secondAttribute="height" id="m8e-cY-g7H"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="f7y-mZ-ppa">
+                                <rect key="frame" x="147" y="38" width="385" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpc-GK-TXy">
+                                        <rect key="frame" x="0.0" y="0.0" width="385" height="29"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="2" height="2"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qp-Qa-Lf8">
+                                        <rect key="frame" x="0.0" y="29" width="385" height="29"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="2" height="2"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20693691386427951" green="0.21735740034322745" blue="0.21863389629678631" alpha="0.80904549319727892" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="gkf-tf-QhD" firstAttribute="height" secondItem="mmq-kw-7Yy" secondAttribute="height" multiplier="0.8" id="AHs-RL-YvX"/>
+                            <constraint firstItem="f7y-mZ-ppa" firstAttribute="centerY" secondItem="gkf-tf-QhD" secondAttribute="centerY" id="D0k-qt-dic"/>
+                            <constraint firstItem="gkf-tf-QhD" firstAttribute="leading" secondItem="mmq-kw-7Yy" secondAttribute="leading" constant="20" id="UNb-BD-UJJ"/>
+                            <constraint firstItem="f7y-mZ-ppa" firstAttribute="leading" secondItem="gkf-tf-QhD" secondAttribute="trailing" constant="20" id="q3k-8F-Vwk"/>
+                            <constraint firstAttribute="trailing" secondItem="f7y-mZ-ppa" secondAttribute="trailing" id="sGf-RU-AxR"/>
+                            <constraint firstItem="gkf-tf-QhD" firstAttribute="centerY" secondItem="mmq-kw-7Yy" secondAttribute="centerY" id="yqg-ii-Iqw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="mmq-kw-7Yy" secondAttribute="bottom" constant="10" id="B4c-7x-nDg"/>
+                    <constraint firstItem="mmq-kw-7Yy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ydt-h4-bWQ"/>
+                    <constraint firstAttribute="trailing" secondItem="mmq-kw-7Yy" secondAttribute="trailing" id="cM9-i6-HBO"/>
+                    <constraint firstItem="mmq-kw-7Yy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wkH-Ww-xfg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgProfile" destination="gkf-tf-QhD" id="zcY-Ed-b7O"/>
+                <outlet property="lblName" destination="Cpc-GK-TXy" id="TA0-mK-uXb"/>
+                <outlet property="lblNumber" destination="9Qp-Qa-Lf8" id="tD1-iz-sAx"/>
+                <outlet property="viewMain" destination="mmq-kw-7Yy" id="Tpn-wb-dN7"/>
+            </connections>
+            <point key="canvasLocation" x="188.40579710144928" y="277.90178571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+    </resources>
+</document>
